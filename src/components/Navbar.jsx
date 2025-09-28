@@ -43,7 +43,17 @@ const Navbar = () => {
               } hover:text-taupe text-[21px] font-medium font-mova 
                 uppercase tracking-[3px] cursor-pointer nav-links`}
               onClick={() => setActive(nav.title)}>
-              <a href={`#${nav.id}`}>{nav.title}</a>
+              {nav.external ? (
+                <a
+                  href={nav.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {nav.title}
+                </a>
+              ) : (
+                <a href={`#${nav.id}`}>{nav.title}</a>
+              )}
             </li>
           ))}
         </ul>
@@ -52,10 +62,8 @@ const Navbar = () => {
         <div className="sm:hidden flex flex-1 w-screen justify-end items-center">
           {toggle ? (
             <div
-              className={`p-6 bg-flashWhite opacity-[0.98] absolute 
-                top-0 left-0 w-screen h-[100vh] z-10 menu ${
-                  toggle ? 'menu-open' : 'menu-close'
-                }`}>
+              className={`p-6 bg-flashWhite opacity-[0.98] absolute top-0 left-0 w-screen h-[100vh] z-10 menu ${toggle ? 'menu-open' : 'menu-close'}`}
+            >
               <div className="flex justify-end">
                 <img
                   src={close}
@@ -64,22 +72,27 @@ const Navbar = () => {
                   onClick={() => setToggle(!toggle)}
                 />
               </div>
-              <ul
-                className="list-none flex flex-col -gap-[1rem] 
-                items-start justify-end mt-[10rem] -ml-[35px]">
+              <ul className="list-none flex flex-col -gap-[1rem] items-start justify-end mt-[10rem] -ml-[35px]">
                 {navLinks.map((nav) => (
                   <li
                     id={nav.id}
                     key={nav.id}
-                    className={`${
-                      active === nav.title ? 'text-french' : 'text-eerieBlack'
-                    } text-[88px] font-bold font-arenq 
-                      uppercase tracking-[1px] cursor-pointer`}
+                    className={`${active === nav.title ? 'text-french' : 'text-eerieBlack'} text-[88px] font-bold font-arenq uppercase tracking-[1px] cursor-pointer`}
                     onClick={() => {
                       setToggle(!toggle);
                       setActive(nav.title);
                     }}>
-                    <a href={`#${nav.id}`}>{nav.title}</a>
+                    {nav.external ? (
+                      <a
+                        href={nav.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        {nav.title}
+                      </a>
+                    ) : (
+                      <a href={`#${nav.id}`}>{nav.title}</a>
+                    )}
                   </li>
                 ))}
               </ul>
