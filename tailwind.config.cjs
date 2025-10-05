@@ -28,6 +28,10 @@ export default {
         eerieBlack: '#1f1f1f',
         onyx: '#5b5b5b',
       },
+      maxWidth: {
+        '4xl': '70rem',
+        '8xl': '100rem',
+      },
       boxShadow: {
         card: '0px 35px 120px -15px #1f1f1f',
         cardLight: '0px 19px 38px #eaeaec, 0px 15px 12px #eaeaec',
@@ -41,6 +45,11 @@ export default {
         xl: '1280px',
         '2xl': '1536px',
         '3xl': '1800px',
+        '4xl': '2560px',
+      },
+      minHeight: {
+        '2xl': '58rem',
+        '4xl': '72rem',
       },
       backgroundImage: {
         about:

@@ -48,10 +48,10 @@ const Experience = () => {
   return (
     <>
       <motion.div variants={textVariant()}>
-        <p className={`${styles.sectionSubText} sm:pl-16 pl-[2rem]`}>
+        <p className={`${styles.sectionSubText}`}>
           What I've done so far
         </p>
-        <h2 className={`${styles.sectionHeadText} sm:pl-16 pl-[2rem]`}>
+        <h2 className={`${styles.sectionHeadText}`}>
           Work Experience.
         </h2>
       </motion.div>
@@ -95,7 +95,7 @@ const Experience = () => {
               ease-in-out"
               onClick={() =>
                 window.open(
-                  'resume link', //paste the link to your resume here
+                  'https://muhammadaqibshahzad.com/muhammad_aqib_shahzad.pdf',
                   '_blank'
                 )
               }

@@ -16,6 +16,8 @@ import github from './icons/github.png';
 import close from './icons/close.png';
 import download from './icons/download.png';
 import downloadHover from './icons/downloadHover.png';
+import letsConnect from './icons/letsConnect.png';
+import letsConnectHover from './icons/letsConnectHover.png';
 import pineapple from './icons/pineapple.png';
 import pineappleHover from './icons/pineappleHover.png';
 import menu from './icons/menu.png';
@@ -61,6 +63,8 @@ export {
   close,
   download,
   downloadHover,
+  letsConnect,
+  letsConnectHover,
   pineapple,
   pineappleHover,
   menu,

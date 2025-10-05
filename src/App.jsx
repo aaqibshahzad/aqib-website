@@ -5,6 +5,7 @@ import {
   Experience,
   Hero,
   Navbar,
+  LetsConnectSec,
   Tech,
   Projects,
 } from './components';
@@ -18,12 +19,16 @@ const App = () => {
           <Hero />
         </div>
 
-        <div className="bg-about bg-cover bg-center bg-no-repeat">
+        <div className="bg-about bg-cover bg-center bg-no-repeat 2xl:min-h-2xl 4xl:min-h-4xl">
           <About />
         </div>
 
         <div className="bg-tech bg-cover bg-center bg-no-repeat pb-10">
           <Tech />
+        </div>
+
+        <div className="bg-about bg-cover bg-center bg-no-repeat 2xl:min-h-2xl 4xl:min-h-4xl">
+          <LetsConnectSec />
         </div>
 
         <Projects />

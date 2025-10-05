@@ -13,20 +13,12 @@ const Hero = () => {
         />
       </div>
       <div className="absolute top-0 left-0 z-0 h-[100vh] w-screen">
-        <img
-          src={worldmap}
-          alt="world map"
-          className="w-full h-full sm:hidden block object-cover"
+        <img src={worldmap} alt="world map" className="w-full h-full sm:hidden block object-cover"
         />
       </div>
-      <section
-        className="relative flex sm:flex-row flex-col w-full h-screen mx-auto 
+      <section className="relative flex sm:flex-row flex-col w-full h-screen mx-auto 
         sm:bg-hero bg-hero-mobile overflow-hidden">
-        <div
-          className={`absolute inset-0 sm:top-[250px] top-[150px] 
-          lg:top-[150px] xl:top-[250px] ${styles.paddingX} 
-          max-w-7xl mx-auto flex flex-row items-start
-          justify-between gap-3`}>
+        <div className={`absolute inset-0 4xl:top-[150px] 3xl:top-[150px] 2xl:top-[150px] xl:top-[150px] lg:top-[100px] xmd:top-[100px] sm:top-[250px] ${styles.paddingX} max-w-8xl mx-auto flex flex-row items-start justify-between gap-3 4xl:gap-0`}>
           <div className="flex flex-col justify-center items-center mt-5 ml-3">
             <div className="w-5 h-5 rounded-full bg-[#0a0a0a] sm:hidden" />
             <div className="w-1 sm:h-80 h-40 bw-gradient sm:hidden" />
@@ -36,10 +28,8 @@ const Hero = () => {
             <h1
               className={`${styles.heroHeadText} text-eerieBlack font-poppins uppercase`}>
               Hi, I'm{' '}
-              <span
-                className="sm:text-battleGray sm:text-[90px] 
-                text-eerieBlack text-[50px] font-mova
-                font-extrabold uppercase">
+              <span className="sm:text-battleGray 4xl:text-[120px] sm:text-[90px] 
+                text-eerieBlack text-[50px] font-mova font-extrabold uppercase">
                 Aqib
               </span>
             </h1>
