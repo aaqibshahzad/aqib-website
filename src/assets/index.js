@@ -43,6 +43,8 @@ import uniquenameplugin from './projects/uniquenameplugin.png';
 import masteryourmoney from './projects/masteryourmoney.png';
 import bigbang from './projects/bigbang.png';
 
+import resumepdf from './resumepdf/muhammad-aqib-shahzad-full-stack-developer.pdf';
+
 export {
   bwmap,
   nairobi,
@@ -89,4 +91,6 @@ export {
   uniquenameplugin,
   masteryourmoney,
   bigbang,
+
+  resumepdf
 };

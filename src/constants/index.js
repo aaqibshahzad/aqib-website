@@ -47,12 +47,12 @@ export const navLinks = [
     id: 'contact',
     title: 'Contact',
   },
-  {
-    id: 'blog',
-    title: 'Blog',
-    external: true,
-    url: 'https://blog.muhammadaqibshahzad.com',
-  },
+  // {
+  //   id: 'blog',
+  //   title: 'Blog',
+  //   external: true,
+  //   url: 'https://blog.muhammadaqibshahzad.com',
+  // },
 ];
 
 const services = [
@@ -126,6 +126,12 @@ const technologies = [
 ];
 
 const experiences = [
+  {
+    title: 'Mid-Level PHP Developer',
+    company_name: 'Esco Logics',
+    iconBg: '#333333',
+    date: 'JULY 2025 - ONGOING',
+  },
   {
     title: 'Mid-Level PHP Developer',
     company_name: 'Marcel Tech',

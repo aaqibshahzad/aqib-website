@@ -7,7 +7,7 @@ import 'react-vertical-timeline-component/style.min.css';
 import { styles } from '../styles';
 import { experiences } from '../constants';
 import { SectionWrapper } from '../hoc';
-import { download, downloadHover, resume } from '../assets';
+import { download, downloadHover, resume, resumepdf } from '../assets';
 import { textVariant } from '../utils/motion';
 
 const ExperienceCard = ({ experience }) => (
@@ -93,12 +93,7 @@ const Experience = () => {
               sm:mt-[22px] mt-[16px] hover:bg-battleGray 
               hover:text-eerieBlack transition duration-[0.2s] 
               ease-in-out"
-              onClick={() =>
-                window.open(
-                  'https://muhammadaqibshahzad.com/muhammad_aqib_shahzad.pdf',
-                  '_blank'
-                )
-              }
+            onClick={() => window.open(resumepdf, '_blank')} 
               onMouseOver={() => {
                 document
                   .querySelector('.download-btn')
